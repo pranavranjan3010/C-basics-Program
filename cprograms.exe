@@ -1,0 +1,629 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+main()
+
+/*
+//HELLO WORLD PROGRAM..........
+{
+	printf("hello world");
+	return 0;
+}
+*/
+/*
+VARIABLES......
+{
+	int a=10;
+	printf("a is :%d",a);
+	return 0;
+}
+*/
+/*
+//DATA TYPES.......
+{
+	int a=10;
+	float f=9.98;
+	char c='A';
+	char name[90]="harry potter";
+	bool ischild=true;
+	printf("\n%d",a);
+	printf("\n%f",f);
+	
+	printf("\n%c",c);
+	
+	printf("\n%s",name);
+	printf("\n%d",ischild);
+}
+*/
+/*
+//USER INPUT DATA TYPE..........
+{
+	int a;
+	float f;
+	char c;
+	char name[90];
+	 char isadult[90];
+	printf("Enter the values\n");
+    scanf("%d%f%c%s%s",&a,&f,&c,&name,&isadult);
+	printf("\n%d",a);
+	printf("\n%f",f);
+	
+	printf("\n%c",c);
+	
+	printf("\n%s",name);
+	printf("\n%s",isadult);
+	return 0;
+}
+*/
+/*
+//SUM OF TWO NUMBERS..........
+{
+	int a,b;
+	 printf("Enter the numbers\n");
+	 scanf("%d%d",&a,&b);
+	 float sum=a+b;
+	printf("Sum of the numbers is:%f",sum);
+	return 0;
+}
+*/
+/*
+//ARITHMETIC OPERATORS.............
+{
+	int a=10,b=20;
+	printf("\n%d",a+b);
+		printf("\n%d",a-b);
+			printf("\n%d",a*b);
+				printf("\n%d",a/b);
+					printf("\n%d",a%b);
+}
+*/
+/*
+//ODD OR EVEN NUMBERS......
+{
+ int n;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ if(n%2==0)
+ {
+ 	printf("even number");
+ }
+ else
+ {
+ 	printf("odd number\n");
+ 	
+ }
+}
+*/
+//POSIITVE NUMBERS..........
+/*
+{
+ int n;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ if(n>0)
+ {
+ 	printf("positive number");
+ }
+ else
+ {
+ 	printf("negative number\n");
+ 	
+ }
+}
+*/
+//FACTORIAL OF NUMBER.....
+/*
+{
+ int n,i,fact=1;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ for(i=1;i<=n;i++)
+ {
+ 	fact=fact*i;
+ }
+ printf("factorial of the number is :%d",fact,n);
+}
+*/
+/*
+//TABLE OF ANY NUMBER..........
+{
+ int n,i;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ for(i=1;i<=10;i++)
+ {
+ 	printf("\n%d*%d=%d",n,i,n*i);
+ }
+ return 0;
+}
+//FIBONACCI SERIES..........
+*//*
+{
+ int n,i,a=0,b=1,c;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ for(i=1;i<=n;i++)
+ {
+ 	c=a+b;
+ 	printf("\n%d",a);
+ 	a=b;
+ 	b=c;
+ 	
+ }
+}
+*/
+//REVERSE OF NUMBER...........
+/*
+
+	{
+ int n,i,r,rev=0;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ while(n!=0)
+ {
+ 	r=n%10;
+ 	n=n/10;
+ 	rev=rev*10+r;
+ 	
+ }
+ printf("reverse of the number is:%d",rev);
+
+}
+*/
+/*
+//PALINDROME NUMBER........
+
+	{
+ int n,i,r,rev=0,t;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ t=n;
+ while(n>0)
+ {
+ 	r=n%10;
+ 	n=n/10;
+ 	rev=rev*10+r;
+ 	
+ }
+ if(rev==t)
+ {
+ 	printf("Palindrome number");
+ }
+ else
+ {
+ 	printf(" not a Palindrome number");
+ }
+
+}
+*/
+/*
+//ARMSTRONG NUMBER..........
+	{
+ int n,i,r,rev=0,t;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ t=n;
+ while(n>0)
+ {
+ 	r=n%10;
+ 	n=n/10;
+ 	rev=rev+r*r*r;
+ 	
+ }
+ if(rev==t)
+ {
+ 	printf("Armstrong number");
+ }
+ else
+ {
+ 	printf(" not a armstrong number");
+ }
+
+}
+*/
+/*
+//SUM OF DIGITS OF NUMBER...........
+	{
+ int n,r,sum=0;
+ printf("Enter the number\n");
+ scanf("%d",&n);
+ 
+ while(n>0)
+ {
+ 	r=n%10;
+ 	n=n/10;
+ 	sum=sum+r;
+ 	
+ }
+ printf("sum of the digits of the numbers is:%d",sum);
+ return 0;
+}
+*/
+/*
+//PRIME NUMBER......
+{
+   int n,i,count=0;
+   printf("enter the number\n");
+   scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+   	if(n%i==0)
+   	{
+   		count++;
+	   }
+   }
+   if(count==2)
+   {
+   	printf("prime number");
+   }
+   else
+   {
+   	printf("not a prime number");
+   }
+   return 0;
+}
+*/
+/*
+//CONDITIONALS IN C...................
+{
+	int age;
+	printf("enter the age\n");
+	scanf("%d",&age);
+	if(age>=18)
+	{
+	printf("you can vote");
+	}
+	else
+	{
+		printf("you cannot vote");
+	}
+}
+*/
+/*
+//FOR LOOP.......
+{
+	int i;
+	for(i=1;i<=5;i++)
+	{
+		printf("\n%d",i);
+		
+	}
+}
+*/
+/*
+//WHILE LOOP.........
+{
+	int i=2;
+	while(i<=5)
+	{
+		printf("\n%d",i);
+		i++;
+		
+	}
+	*/
+	/*
+	//DO WHILE LOOP...........
+	{
+	int i=1;
+	do
+	{
+		printf("\n%d",i);
+		i++;
+		
+	}
+		while(i<=5);
+	
+}
+*/
+/*
+   //CONTINUE KEYWORD..........
+{
+ int i;
+ for(i=1;i<=5;i++)
+ {
+ 	if(i==3)
+ 	{
+ 		continue;
+	 }
+	 printf("\n%d",i);
+ }
+}
+*/
+/*
+//BREAK KEYWORD...........
+{
+ int i;
+ for(i=1;i<=5;i++)
+ {
+ 	if(i==3)
+ 	{
+ 		break;
+	 }
+	 printf("\n%d",i);
+ }
+}
+*/
+/*
+//GOTO KEYWORD........
+{
+ int n;
+ ZERO:
+ printf("enter the number\n");
+ scanf("%d",&n);
+ if(n==0)
+ {
+ 	goto ZERO;
+ 	
+ }
+ else
+ {
+   printf("\nYou entered number is:%d",n);
+ }
+}
+*/
+  //SWAPPING TWO NUMBERS...........
+/*
+{
+int a=10,b=20;
+printf("\nBefore swapping:\n");
+printf("a=10\nb=20");
+a=a+b;
+b=a-b;
+a=a-b;
+printf("\nAfter swapping\:\n");
+printf("\na=%d\nb=%d",a,b);
+}
+*/
+//PRINTING USER STRING.........
+/*
+
+{
+	char str[90];
+	printf("Enter the string\n");
+	gets(str);
+	printf("Entered string is:%s",str);
+}
+*/
+/*
+//LENGTH OF THE STRING........
+{
+	char str[90];
+	int len;
+	
+	printf("Enter the string\n");
+	gets(str);
+	len=strlen(str);
+	printf("Entered string is:%d",len);
+}
+*/
+/*
+//REVERSE OF STRING......
+{
+	char str[90];
+  printf("Enter the string\n");
+  gets(str);
+  strrev(str);
+  printf("reverse of the string is:%s",str);
+}
+*/
+/*
+//SWITCH CASE...........
+{
+	int  num;
+	printf("enter the number\n");
+	scanf("%d",&num);
+	switch(num)
+
+{
+	case 1:
+		printf("one");
+		break;
+		case 2:
+		printf("two");
+		break;
+		case 3:
+		printf("three");
+		break;
+		case 4:
+		printf("four");
+		break;
+		case 5:
+		printf("five");
+		break;
+		default:
+			printf("enter the number upto(1 to 5)");
+		
+}
+}
+*/
+/*
+//ARRAY INDEXING......
+{
+	int arr[5]={1,2,3,45,67};
+	{
+		printf("\n%d",arr[0]);
+		printf("\n%d",arr[1]);
+		printf("\n%d",arr[2]);
+		printf("\n%d",arr[3]);
+		printf("\n%d",arr[4]);
+		
+	}
+}
+*/
+/*
+// 2D-ARRY............
+{
+	int arr[30][90]={{1,2,3,4},{2,3,4,5,6}};
+	 printf("\n%d",arr[0][1]);
+	 printf("\n%d",arr[0][2]);
+	 printf("\n%d",arr[0][3]);
+	 printf("\n%d",arr[0][4]);
+	 printf("\n%d",arr[0][5]);
+}
+*/
+/*
+// PRINTING ARRAY ELEMENTS......
+{
+	int arr[10],i;
+	for(i=1;i<=5;i++)
+	{
+		printf("Enter the numbers\n");
+		scanf("%d",&arr[i]);
+	}
+	printf("\nelements are:\n");
+	for(i=1;i<=5;i++)
+	{
+		 printf("\n%d",arr[i]);
+     }     
+}
+*/
+/*
+//MAXIMUM OF ARRAY ELEMENTS..............
+{
+	int arr[100],i,max=0;
+	for(i=1;i<=5;i++)
+	{
+		printf("Enter the numbers\n");
+		scanf("%d",&arr[i]);
+	}
+	printf("\nmaximum number are:\n");
+	for(i=1;i<=5;i++)
+	{
+		if(arr[i]>max)
+		{
+			max=arr[i];
+		}
+     }
+	 printf("\n%d",max);     
+}
+*/
+/*
+//MINIMUM OF ARRAY ELEMENTS..............
+{
+	int arr[100],i,min;
+	for(i=1;i<=5;i++)
+	{
+		printf("Enter the numbers\n");
+		scanf("%d",&arr[i]);
+	}
+	printf("\nminimum number are:\n");
+	for(i=1;i<=5;i++)
+	{
+		if(arr[i]<min)
+		{
+			min=arr[i];
+		}
+     }
+	 printf("\n%d",min);     
+}
+*/
+/*
+//SUM OF THE FIRST N ELEMENTS OF ARRAY........
+{
+	int arr[10],i,sum=0;
+	for(i=1;i<=5;i++)
+	{
+		printf("Enter the numbers\n");
+		scanf("%d",&arr[i]);
+		sum=sum+arr[i];
+	}
+	printf("Sum of the numbers is:%d",sum);
+}
+*/
+/*
+//GREATEST OF TWO NUMBERS.......
+{
+	int a,b;
+	printf("Enter the numbers\n");
+	scanf("%d%d",&a,&b);
+	if(a>b)
+	{
+		printf("a is greater number");
+	}
+	else
+	{
+		printf("b is greater number");
+	}
+	return 0;
+}
+*/
+/*
+//GREATEST OF THREE NUMBERS.......
+
+{
+	int a,b,c;
+	printf("Enter the numbers\n");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b&&a>c)
+	{
+		printf("a is greater number");
+	}
+	else if(b>a&&b>c)
+	{
+		printf("b is greater number");
+	}
+	else
+	{
+		printf("c is greater number");
+	}
+	return 0;
+}
+*/
+/*
+// CONDITIONAL OPERATOR.............
+{
+	int a,b,max;
+	printf("Enter the numbers\n");
+	scanf("%d%d",&a,&b);
+	max=a>b?a:b;
+	printf("\nmaximum of the two numbers are:%d",max);
+}
+*/
+/*
+//STUCTURE PROGRAMS..............
+struct student
+{
+	public:
+		char name[90];
+		int roll;
+		float marks;
+	};
+	main()
+	{
+		student s;
+		printf("Enter the name\n");
+		gets(s.name);
+		printf("Enter the roll\n");
+		scanf("%d",&s.roll);
+		printf("Enter he marks\n");
+		scanf("%f",&s.marks);
+		printf("\nName=%s",s.name);
+		printf("\nRoll=%d",s.roll);
+	     printf("\nMarks=%f",s.marks);
+	}
+	*/
+	/*
+	//CLASS IN C....................
+	class car
+	{
+		public:
+			char name[90];
+			int model_no;
+			float price;
+		};
+		main()
+		{
+			car c;
+		printf("Enter the name\n");
+		gets(c.name);
+		printf("Enter the model_no\n");
+		scanf("%d",&c.model_no);
+		printf("Enter the price\n");
+		scanf("%f",&c.price);
+		printf("\nName=%s",c.name);
+		printf("\nModel_number=%d",c.model_no);
+	     printf("\nPrice=%f",c.price);
+			
+		}
+		*/
+		
